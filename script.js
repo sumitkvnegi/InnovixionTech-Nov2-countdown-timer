@@ -80,9 +80,8 @@ function addEvent() {
   const eventName = document.getElementById("event").value;
   const dateTime = document.getElementById("date-time").value;
   const eventTimeInSecond = new Date(dateTime).getTime() / 1000;
-  const currentTime = new Date().toLocaleString();
-  const currentTimeInSecond = new Date(currentTime).getTime() / 1000;
-
+  const currentTimeInSecond = new Date().getTime() / 1000;
+  
   if (eventTimeInSecond <= currentTimeInSecond) {
     console.log("Select a future event, not a past event");
     showWarning("Please select a future date and time.");
