@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CountDown Timer</title>
+</head>
+<body>
+    <div class="logo">
+    <h1>1#</h1>
+    </div>
+    <div class="addEvent">
+        <h2>Add Event</h2>
+        <input id="event" type="text" placeholder="Event">
+        <input id="date-time" type="datetime-local">
+        <div class="gif-container" class="addEventButton" onclick="addEvent()">
+            <img class="static-image" src="./static.png" alt="Static Image">
+            <img class="gif" src="./appointment.gif" alt="Animated GIF">
+          </div>
+    </div>
+    <div class="eventsCountDown">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
